@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title> VETERINARIA</title>
+    <meta>
+    <meta>
+    <meta>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"> 
+                <h1>VETERINARIA PATITAS FELICES</h1>
+            </div>
+            <nav>
+                <a class="icon-menu" href="#under-pro-records">MENU</a>
+            </nav>
+            <nav class="nav-links" id="nav-links">
+                    <a href="#inicio">HOME</a>
+                    <a href="#servicios">SERVICIOS</a>
+                    <a href="#blog">BLOG</a>
+                    <a href="#contacto">CONTACTO</a>
+            </nav>
+        </div>
+    </header> 
+
+    <section id="inicio" class="bienvenidos">
+        <div class="container">
+            <h2>Bienvenidos a Veterinaria Patitas Felices</h2>
+            <p>Cuidamos a tus mascotas con amor y profesionalismo</p>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio">
+                    <h3>Consulta</h3>
+                    <p>Atención médica profesional</p>
+                </div>
+                <div class="servicio">
+                    <h3>Peluquería</h3>
+                    <p>Cuidado estético para tus mascotas</p>
+                </div>
+                <div class="servicio">
+                    <h3>Vacunación</h3>
+                    <p>Protección contra enfermedades</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-grid">
+                <div class="articulo">
+                    <h3>Consejos de salud</h3>
+                    <p>Cómo mantener a tu mascota feliz y saludable</p>
+                </div>
+                <div class="articulo">
+                    <h3>Nutrición adecuada</h3>
+                    <p>La importancia de una dieta balanceada para tus mascotas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="galeria">
+        <div class="container">
+            <h2>Galería</h2>
+            <div class="galeria-grid">
+                <div class="mascota1" href="img/gato.jpg"alt="cerdo" style="height: 500px;"></div>
+                <div class="mascota2" href="img/perro.jpg"alt="cerdo" style="height: 500px;"></div>
+                <div class="mascota3" href="img/vaca.jpg"alt="cerdo" style="height: 500px;"></div>
+                <div class="mascota3" href="img/cerdo.jpg"alt="cerdo" style="height: 500px;"></div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contacto-info">
+                <p><strong>Dirección:</strong> Calle Principal #123, Ciudad</p>
+                <p><strong>Teléfono:</strong> +591 70000000</p>
+                <p><strong>Email:</strong> contacto@patitasfelices.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Veterinaria Patitas Felices 2023</p>
+            <p>Cochabamba - Sacaba, Bolivia</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para el menú responsive
+        document.getElementById('menu-toggle').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

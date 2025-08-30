@@ -1,0 +1,592 @@
+/* ESTILOS GENERALES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1em;
+}
+h2, h3{
+    margin-bottom: 15px;
+    color: #ffffff;
+    
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* HEADER */
+header {
+    background-color: #166bff; /* gris claro, cámbialo al color que quieras */
+    background-image: linear-gradient(to right, rgb(0, 76, 175), rgb(4, 173, 164));
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0;
+    /* si quiero que header se quede arriba para web responsiva debo poner POSITION: FIXED*/
+}
+
+
+header .logo {
+    padding: 30px 20px 0px 5px;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-align: center;
+    
+}
+
+header .container nav{
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #21570e; 
+    margin: 20px;
+    gap: 0px;
+    font-size: 1.5em;
+    
+}
+
+
+header a {
+    padding: 1rem;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    
+}
+
+header a:hover {
+    color: rgb(230, 255, 9);
+    
+}
+
+
+
+/* SECCIÓN BIENVENIDOS */
+.bienvenidos {
+    background-color: #c7c6c6;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 25px;
+    margin: 20px;
+    
+}
+
+.bienvenidos h2 {
+    font-size: 1rem;
+    color: #000000;
+    text-align: left;
+    margin: 30px;
+}
+
+.bienvenidos p {
+    padding: 0px 20px 0px 5px;
+    font-size: 0.6rem;
+    color: #000000;
+    text-align: left;
+    margin: 30px;
+}
+
+/* SECCIÓN SERVICIOS */
+.servicios {
+            background-color: #c7c6c6;
+            text-align: center;
+            padding: 25px 0;
+            border-radius: 20px;
+            margin: 15px;
+            width: auto;
+            overflow: hidden; /* Evita que el contenido se desborde */
+        }
+
+        .servicios h2 {
+            padding: 0px 15px 0px 5px;
+            font-size: 1.2rem;
+            text-align: left;
+            margin-bottom: 20px;
+            color: #000000;
+            margin: 20px;
+        }
+
+        .servicio p {
+            font-size: 0.95rem; /* Tamaño reducido para mejor ajuste */
+            color: #000000;
+            text-align: left;
+            margin: 15px;
+            line-height: 1.4;
+        }
+
+        .servicios-grid {
+            display: flex;
+            flex-direction: column; /* Columna en móviles por defecto */
+            gap: 15px;
+            margin: 15px;
+        }
+
+        .servicio {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Asegura que no exceda el ancho del contenedor */
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .servicio h3 {
+            color: #000000;
+            margin-bottom: 10px;
+            text-align: left;
+            font-size: 1.2rem; /* Tamaño reducido */
+            margin: 15px;
+        }
+
+/* SECCIÓN BLOG */
+.blog {
+    background-color: #c7c6c6;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+.blog h2 {
+    padding: 0px 20px 0px 5px;
+    font-size:1rem;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #000000;
+    margin: 30px;
+}
+
+.blog p{
+    
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+    margin: 30px;
+    text-align: left;
+    margin: 30px;
+}
+.blog-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.articulo {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.articulo h3 {
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 2rem;
+    margin: 30px;
+}
+
+/* SECCIÓN GALERÍA */
+.galeria {
+    background-color: #c7c6c6;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+.galeria h2 {
+    padding: 0px 20px 0px 5px;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #000000;
+    margin: 30px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    
+}
+
+.mascota1 {
+    background-color: transparent;
+    background-image: url("../img/gato.jpg");
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    border-radius: 50px;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.mascota2 {
+    background-color: transparent;
+    background-image: url("../img/perro.jpg");
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    border-radius: 50px;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.mascota2 {
+    background-color: transparent;
+    background-image: url("../img/perro.jpg");
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    border-radius: 50px;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.mascota3 {
+    background-color: transparent;
+    background-image: url("../img/vaca.jpg");
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    border-radius: 50px;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.mascota4 {
+    background-color: transparent;
+    background-image: url("../img/cerdo.jpg");
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    border-radius: 50px;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* SECCIÓN CONTACTO */
+.contacto {
+    background-color: #c7c6c6;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color:#000000;
+}
+
+.contacto-info {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contacto-info p {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #e9ecef;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* ===== Media Queries para Web ===== */
+@media (min-width: 1024px) {
+    /* Header para web */
+    header {
+    background-color: #00884f; /* gris claro, cámbialo al color que quieras */
+    background-image: linear-gradient(to right, rgb(5, 118, 80), rgb(7, 201, 191));
+    background-size: cover;
+    background-position: center;
+    padding: 0.2%;
+    /* si quiero que header se quede arriba para web responsiva debo poner POSITION: FIXED*/
+}
+
+    header .container nav {
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 30px;
+    font-size: 1.5em;
+    }
+    header nav a {
+        width: auto;
+        padding: 0.3px ;
+        background-color: none;
+        
+    }
+    .container h1 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 2em;
+    }   
+    
+    header nav a.icon-menu {
+        display: none;
+    }
+    header a:hover {
+    color: rgb(230, 255, 9);
+    background-color: #000000;
+    
+}
+    /* Sección bienvenidos para web */
+    .bienvenidos {
+    background-color: #c7c6c6;
+    padding: 25px 30px;
+    border-radius: 15px;
+    margin: 30px 20px 30px 20px; /* Margen superior, derecho, inferior, izquierdo */
+    text-align: left;       
+    }
+
+    .bienvenidos h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin: 0 0 2px 0;
+    padding-bottom: 10px;
+    text-align: left;
+    width: fit-content;
+    }
+
+    .bienvenidos p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    }
+    
+    /* Servicios en fila */
+    .servicios {
+    background-color: #c7c6c6;
+    text-align: center;
+    margin: 20px;
+    padding: 25px 30px;
+    border-radius: 15px;
+    margin: 30px 20px 30px 20px; /* Margen superior, derecho, inferior, izquierdo */
+    text-align: left;       
+    }
+    
+    }
+
+.servicios h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin: 0 0 2px 0;
+    padding-bottom: 10px;
+    text-align: left;
+    width: fit-content;
+    
+}
+.servicio p{
+    padding: 0px 20px 0px 5px;
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+    margin: 30px;
+}
+
+.servicios-grid {
+    display: flex grid;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.servicio {
+    flex-direction: row;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    padding: 5px 20px 5px 40px;
+    text-align: center;    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.servicio h3 {
+    padding: 10px 20px 0px 5px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+    /* Blog en fila */
+    .blog {
+    background-color: #c7c6c6;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+.blog h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin: 0 0 2px 0;
+    padding-bottom: 10px;
+    text-align: left;
+    width: fit-content;
+    
+}
+
+.blog p{
+    
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+    margin: 30px;
+    text-align: left;
+    margin: 30px;
+}
+.blog-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.articulo {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.articulo h3 {
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 2rem;
+    margin: 30px;
+}
+    
+    /* Galería para web */
+    .galeria {
+    background-color: #c7c6c6;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 25px;
+    margin: 20px;
+    flex-direction: row;
+}
+
+.galeria h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin: 0 0 2px 0;
+    padding-bottom: 10px;
+    text-align: left;
+    width: fit-content;
+}
+
+.galeria-grid {
+    display: grid;
+    flex-direction: row;
+    gap: 15px;
+    
+}
+
+.mascota1 {
+    background-color: transparent;
+    background-image: url("../img/gato.jpg");
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    border-radius: 50px;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.mascota2 {
+    background-color: transparent;
+    background-image: url("../img/perro.jpg");
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    border-radius: 50px;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.mascota2 {
+    background-color: transparent;
+    background-image: url("../img/perro.jpg");
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    border-radius: 50px;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.mascota3 {
+    background-color: transparent;
+    background-image: url("../img/vaca.jpg");
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    border-radius: 50px;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.mascota4 {
+    background-color: transparent;
+    background-image: url("../img/cerdo.jpg");
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    border-radius: 50px;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+    /* Contacto para web */
+    .contacto h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    color:#000000;
+}
+    
+
+
